@@ -1,16 +1,12 @@
 package com.tuling.service;
 
+import com.tuling.domain.User;
+import org.apache.dubbo.config.annotation.DubboService;
 import org.springframework.stereotype.Service;
 
-import com.tuling.domain.User;
-@Service
-public class UserService {
 
-	public User getUser(String uid) {
-		User user = new User();
-		user.setUid(uid);
-		user.setUsername("yanlinbo");
-		return user;
-	}
+public interface UserService {
+
+	public User getUser(String uid);
 	
 }
