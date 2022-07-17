@@ -1,6 +1,7 @@
 package com.tuling.service;
 
 import com.tuling.domain.User;
+import com.tuling.domain.entity.SysUser;
 import org.apache.dubbo.config.annotation.DubboReference;
 import org.springframework.stereotype.Service;
 
@@ -28,5 +29,11 @@ public class OrderService {
 		User user = userService.getUser("1");
 		System.out.println("创建订单");
 		return user.toString();
+	}
+
+	public String getOrderUser() {
+		SysUser sysUser = userService.getSysUser(1L);
+		System.out.println("获取订单的用户");
+		return sysUser.getUserName();
 	}
 }

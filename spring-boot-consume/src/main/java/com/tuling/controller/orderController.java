@@ -17,4 +17,9 @@ public class orderController {
 		public String createOrder() { 
 			return orderService.createOrder();
 	 }
+
+		@GetMapping("/getOrderUser")
+		public String getOrderUser() {
+			return orderService.getOrderUser();
+		}
 }

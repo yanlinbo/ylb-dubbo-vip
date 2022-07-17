@@ -36,6 +36,14 @@
 		  <version>3.0.7</version>
 	  </dependency>
 
+	  <!--本地模块依赖-->
+	  <!--依赖的模块-->
+	  <dependency>
+		  <groupId>com.tuling</groupId>
+		  <artifactId>spring-boot-common</artifactId>
+		  <version>0.0.1-SNAPSHOT</version>
+	  </dependency>
+
 
   </dependencies>
 	<!--<build>
