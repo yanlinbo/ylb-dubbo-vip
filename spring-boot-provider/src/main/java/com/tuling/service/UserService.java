@@ -13,5 +13,9 @@ public interface UserService {
 	public User getUser(String uid);
 
 	public SysUser getSysUser(Long userId);
+
+	public SysUser checkEmailUnique(String email);
+
+	public int insertUser(SysUser user);
 	
 }
